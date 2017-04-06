@@ -2,52 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="122c6e31-c3b4-46a3-8407-c30e355b5990" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/alter.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/alter.jsp" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ojdbc6.jar" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/ojdbc6.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/59d9a87b-a19b-4d57-88f7-670d07791028/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/59d9a87b-a19b-4d57-88f7-670d07791028/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/59d9a87b-a19b-4d57-88f7-670d07791028/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/59d9a87b-a19b-4d57-88f7-670d07791028/_metadata_/metadata.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/59d9a87b-a19b-4d57-88f7-670d07791028/_src_/schema/IDAIP.zip" afterPath="$PROJECT_DIR$/.idea/dataSources/59d9a87b-a19b-4d57-88f7-670d07791028/_src_/schema/IDAIP.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/controllers/OpenEval.class" afterPath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/controllers/OpenEval.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/controllers/SetResponseEval.class" afterPath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/controllers/SetResponseEval.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/controllers/SuccessController.class" afterPath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/controllers/SuccessController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/core/Conexion.class" afterPath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/core/Conexion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/core/NoConectionFunctions.class" afterPath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/core/NoConectionFunctions.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/models/Answer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/models/Question.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/models/Articulos.class" afterPath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/models/Articulos.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/models/Evaluaciones.class" afterPath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/models/Evaluaciones.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/models/GetResp.class" afterPath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/models/GetResp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/models/GetRestrictForChoise.class" afterPath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/models/GetRestrictForChoise.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/models/HelperFunctions.class" afterPath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/models/HelperFunctions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/models/Insidencias.class" afterPath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/models/Insidencias.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/models/Periodos.class" afterPath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/models/Periodos.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/models/SujetosObligados.class" afterPath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/WEB-INF/classes/models/SujetosObligados.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IDAIP/controllers/OpenEval.class" afterPath="$PROJECT_DIR$/out/production/IDAIP/controllers/OpenEval.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IDAIP/controllers/SetResponseEval.class" afterPath="$PROJECT_DIR$/out/production/IDAIP/controllers/SetResponseEval.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IDAIP/controllers/SuccessController.class" afterPath="$PROJECT_DIR$/out/production/IDAIP/controllers/SuccessController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IDAIP/core/Conexion.class" afterPath="$PROJECT_DIR$/out/production/IDAIP/core/Conexion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IDAIP/core/NoConectionFunctions.class" afterPath="$PROJECT_DIR$/out/production/IDAIP/core/NoConectionFunctions.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IDAIP/models/Articulos.class" afterPath="$PROJECT_DIR$/out/production/IDAIP/models/Articulos.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IDAIP/models/Evaluaciones.class" afterPath="$PROJECT_DIR$/out/production/IDAIP/models/Evaluaciones.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IDAIP/models/GetResp.class" afterPath="$PROJECT_DIR$/out/production/IDAIP/models/GetResp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IDAIP/models/GetRestrictForChoise.class" afterPath="$PROJECT_DIR$/out/production/IDAIP/models/GetRestrictForChoise.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IDAIP/models/HelperFunctions.class" afterPath="$PROJECT_DIR$/out/production/IDAIP/models/HelperFunctions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IDAIP/models/Insidencias.class" afterPath="$PROJECT_DIR$/out/production/IDAIP/models/Insidencias.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IDAIP/models/Periodos.class" afterPath="$PROJECT_DIR$/out/production/IDAIP/models/Periodos.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IDAIP/models/SujetosObligados.class" afterPath="$PROJECT_DIR$/out/production/IDAIP/models/SujetosObligados.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/59d9a87b-a19b-4d57-88f7-670d07791028.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/59d9a87b-a19b-4d57-88f7-670d07791028.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/ojdbc6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IDAIP.iml" afterPath="$PROJECT_DIR$/IDAIP.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/IDAIP_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core/Conexion.java" afterPath="$PROJECT_DIR$/src/core/Conexion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/SuccessController.java" afterPath="$PROJECT_DIR$/src/controllers/SuccessController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/Articulos.java" afterPath="$PROJECT_DIR$/src/models/Articulos.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/Evaluaciones.java" afterPath="$PROJECT_DIR$/src/models/Evaluaciones.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/GetResp.java" afterPath="$PROJECT_DIR$/src/models/GetResp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/GetRestrictForChoise.java" afterPath="$PROJECT_DIR$/src/models/GetRestrictForChoise.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/Insidencias.java" afterPath="$PROJECT_DIR$/src/models/Insidencias.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/SujetosObligados.java" afterPath="$PROJECT_DIR$/src/models/SujetosObligados.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/HelperFunctions.java" afterPath="$PROJECT_DIR$/src/models/HelperFunctions.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/response.jsp" afterPath="$PROJECT_DIR$/web/response.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -107,6 +76,50 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="@192.241.222.183" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="IDAIP" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="EVALUACIONES_FRACCIONES" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="@192.241.222.183" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="IDAIP" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="ART_FRACC_RESPUESTAS" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -114,31 +127,71 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="185" column="26" lean-forward="true" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
+            <state relative-caret-position="294">
+              <caret line="185" column="30" lean-forward="false" selection-start-line="185" selection-start-column="30" selection-end-line="185" selection-end-column="30" />
               <folding>
-                <element signature="e#8910#10979#0#JSP" expanded="false" />
+                <element signature="e#2992#4793#0#HTML" expanded="false" />
+                <element signature="e#4870#4892#0#HTML" expanded="true" />
+                <element signature="e#4839#5232#0#HTML" expanded="false" />
+                <element signature="e#5300#5522#0#HTML" expanded="false" />
+                <element signature="e#5629#6931#0#HTML" expanded="false" />
+                <element signature="e#7068#7092#0#HTML" expanded="true" />
+                <element signature="e#7909#8160#0#HTML" expanded="false" />
+                <element signature="e#8186#13794#0#HTML" expanded="false" />
+                <element signature="e#8917#8939#0#HTML" expanded="true" />
+                <element signature="e#9892#10927#0#HTML" expanded="false" />
+                <element signature="e#10969#11110#0#JSP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/59d9a87b-a19b-4d57-88f7-670d07791028/console.sql">
+      <file leaf-file-name="response.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/response.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="254" lean-forward="false" selection-start-line="0" selection-start-column="254" selection-end-line="0" selection-end-column="254" />
+            <state relative-caret-position="660">
+              <caret line="166" column="60" lean-forward="false" selection-start-line="166" selection-start-column="60" selection-end-line="166" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Conexion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/Conexion.java">
+      <file leaf-file-name="SuccessController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controllers/SuccessController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-              <folding />
+            <state relative-caret-position="324">
+              <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+              <folding>
+                <marker date="1491460637908" expanded="true" signature="420:784" ph="select descr... EVALUACIONES_FRACCIONES" />
+                <marker date="1491460637908" expanded="true" signature="452:574" ph="Select Sum (... Det_Eval_Fracciones" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Evaluaciones.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/Evaluaciones.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="44" column="19" lean-forward="false" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1491281369531" expanded="true" signature="1133:1182" ph="SELECT * FRO... EVALUACIONES" />
+                <marker date="1491281369531" expanded="true" signature="2761:2787" ph="SELECT * FRO... EVALUACIONES" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Articulos.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/Articulos.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="26" />
+              <folding>
+                <marker date="1491460529162" expanded="true" signature="495:776" ph="select 'Arti... Articulos" />
+                <marker date="1491460529162" expanded="true" signature="842:843" ph="select 'Arti... Articulos" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,27 +199,31 @@
       <file leaf-file-name="GetResp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/models/GetResp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="126">
+              <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#164#165#0" expanded="false" />
-                <element signature="e#199#200#0" expanded="false" />
-                <marker date="1491077454728" expanded="true" signature="298:387" ph="select * fro... ART_FRACC_RESPUESTAS" />
+                <marker date="1491456509611" expanded="true" signature="335:424" ph="select * fro... ART_FRACC_RESPUESTAS" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Articulos.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/models/Articulos.java">
+      <file leaf-file-name="Answer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/Answer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-              <folding>
-                <marker date="1491451084692" expanded="true" signature="433:687" ph="select 'Arti... Articulos" />
-                <marker date="1491451084692" expanded="true" signature="687:689" ph="select 'Arti... Articulos" />
-              </folding>
+            <state relative-caret-position="126">
+              <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Question.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/Question.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -174,11 +231,10 @@
       <file leaf-file-name="GetRestrictForChoise.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/models/GetRestrictForChoise.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+            <state relative-caret-position="322">
+              <caret line="21" column="172" lean-forward="false" selection-start-line="21" selection-start-column="172" selection-end-line="21" selection-end-column="172" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <marker date="1491281369453" expanded="true" signature="446:565" ph="SELECT * FRO... DET_EVAL_FRACCIONES" />
+                <marker date="1491457045760" expanded="true" signature="440:559" ph="SELECT * FRO... DET_EVAL_FRACCIONES" />
               </folding>
             </state>
           </provider>
@@ -187,54 +243,10 @@
       <file leaf-file-name="HelperFunctions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/models/HelperFunctions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            <state relative-caret-position="231">
+              <caret line="16" column="59" lean-forward="false" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#209#210#0" expanded="false" />
-                <element signature="e#244#245#0" expanded="false" />
-                <marker date="1491077716627" expanded="true" signature="364:711" ph="select numer... EVALUACIONES_FRACCIONES" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Insidencias.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/Insidencias.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <marker date="1491281369578" expanded="true" signature="515:563" ph="SELECT * FRO... INCIDENCIAS" />
-                <marker date="1491281369578" expanded="true" signature="1196:1221" ph="SELECT * FRO... INCIDENCIAS" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Periodos.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/Periodos.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <marker date="1491077716720" expanded="true" signature="574:596" ph="SELECT * FRO... PERIODOS" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SujetosObligados.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/SujetosObligados.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="903">
-              <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <marker date="1491281369625" expanded="true" signature="862:893" ph="SELECT * FRO... SUJETOS_OBLIGADOS" />
-                <marker date="1491281369625" expanded="true" signature="1184:1243" ph="SELECT * FRO... SUJETOS_OBLIGADOS" />
+                <marker date="1491456715151" expanded="true" signature="396:743" ph="select numer... EVALUACIONES_FRACCIONES" />
               </folding>
             </state>
           </provider>
@@ -245,8 +257,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -267,24 +279,26 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/data/Data.java" />
-        <option value="$PROJECT_DIR$/src/models/GetResp.java" />
-        <option value="$PROJECT_DIR$/src/models/HelperFunctions.java" />
         <option value="$PROJECT_DIR$/src/models/Periodos.java" />
-        <option value="$PROJECT_DIR$/src/controllers/SuccessController.java" />
         <option value="$PROJECT_DIR$/web/viewEval.jsp" />
-        <option value="$PROJECT_DIR$/web/response.jsp" />
         <option value="$PROJECT_DIR$/src/controllers/SetResponseEval.java" />
         <option value="$PROJECT_DIR$/src/controllers/OpenEval.java" />
         <option value="$PROJECT_DIR$/web/alter.jsp" />
         <option value="$PROJECT_DIR$/src/controllers/IndexInfo.java" />
         <option value="$PROJECT_DIR$/src/models/Evaluaciones.java" />
-        <option value="$PROJECT_DIR$/src/models/GetRestrictForChoise.java" />
         <option value="$PROJECT_DIR$/src/models/Insidencias.java" />
         <option value="$PROJECT_DIR$/src/models/SujetosObligados.java" />
         <option value="$PROJECT_DIR$/src/core/Conexion.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/59d9a87b-a19b-4d57-88f7-670d07791028/console.sql" />
+        <option value="$PROJECT_DIR$/src/models/Question.java" />
+        <option value="$PROJECT_DIR$/src/models/Answer.java" />
+        <option value="$PROJECT_DIR$/src/models/GetResp.java" />
+        <option value="$PROJECT_DIR$/src/models/HelperFunctions.java" />
+        <option value="$PROJECT_DIR$/src/models/GetRestrictForChoise.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/models/Articulos.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/59d9a87b-a19b-4d57-88f7-670d07791028/console.sql" />
+        <option value="$PROJECT_DIR$/src/controllers/SuccessController.java" />
+        <option value="$PROJECT_DIR$/web/response.jsp" />
       </list>
     </option>
   </component>
@@ -398,6 +412,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IDAIP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IDAIP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -974,6 +1006,7 @@
     <configuration default="false" name="Tomcat 7.0.76" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.76" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <deployment>
         <artifact name="IDAIP:war exploded">
           <settings>
@@ -1072,12 +1105,12 @@
       <workItem from="1491070188381" duration="3057000" />
       <workItem from="1491076996868" duration="5425000" />
       <workItem from="1491278430525" duration="4754000" />
-      <workItem from="1491450772944" duration="440000" />
+      <workItem from="1491450772944" duration="9824000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13676000" />
+    <option name="totallyTimeSpent" value="23060000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1091,7 +1124,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2056928" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2056928" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1102,9 +1135,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50509626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09173273" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19548872" sideWeight="0.73612684" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19280344" sideWeight="0.26387316" order="2" side_tool="true" content_ui="tabs" />
@@ -1175,7 +1208,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#8910#10979#0#JSP" expanded="false" />
+            <element signature="e#2992#4793#0#HTML" expanded="false" />
+            <element signature="e#4870#4892#0#HTML" expanded="true" />
+            <element signature="e#4839#5232#0#HTML" expanded="false" />
+            <element signature="e#5300#5522#0#HTML" expanded="false" />
+            <element signature="e#5629#6931#0#HTML" expanded="false" />
+            <element signature="e#7068#7092#0#HTML" expanded="true" />
+            <element signature="e#7909#8160#0#HTML" expanded="false" />
+            <element signature="e#8186#13794#0#HTML" expanded="false" />
+            <element signature="e#8917#8939#0#HTML" expanded="true" />
+            <element signature="e#9892#10927#0#HTML" expanded="false" />
+            <element signature="e#10969#11110#0#JSP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1201,10 +1244,7 @@
         <state relative-caret-position="483">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#164#165#0" expanded="false" />
-            <element signature="e#199#200#0" expanded="false" />
-            <marker date="1491077454728" expanded="true" signature="298:387" ph="select * fro... ART_FRACC_RESPUESTAS" />
+            <marker date="1491456509611" expanded="true" signature="335:424" ph="select * fro... ART_FRACC_RESPUESTAS" />
           </folding>
         </state>
       </provider>
@@ -1214,8 +1254,8 @@
         <state relative-caret-position="420">
           <caret line="21" column="337" lean-forward="false" selection-start-line="21" selection-start-column="337" selection-end-line="21" selection-end-column="337" />
           <folding>
-            <marker date="1491451084692" expanded="true" signature="433:687" ph="select 'Arti... Articulos" />
-            <marker date="1491451084692" expanded="true" signature="687:689" ph="select 'Arti... Articulos" />
+            <marker date="1491460529162" expanded="true" signature="495:776" ph="select 'Arti... Articulos" />
+            <marker date="1491460529162" expanded="true" signature="842:843" ph="select 'Arti... Articulos" />
           </folding>
         </state>
       </provider>
@@ -1225,8 +1265,7 @@
         <state relative-caret-position="651">
           <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1491281369453" expanded="true" signature="446:565" ph="SELECT * FRO... DET_EVAL_FRACCIONES" />
+            <marker date="1491457045760" expanded="true" signature="440:559" ph="SELECT * FRO... DET_EVAL_FRACCIONES" />
           </folding>
         </state>
       </provider>
@@ -1236,10 +1275,7 @@
         <state relative-caret-position="315">
           <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#209#210#0" expanded="false" />
-            <element signature="e#244#245#0" expanded="false" />
-            <marker date="1491077716627" expanded="true" signature="364:711" ph="select numer... EVALUACIONES_FRACCIONES" />
+            <marker date="1491456715151" expanded="true" signature="396:743" ph="select numer... EVALUACIONES_FRACCIONES" />
           </folding>
         </state>
       </provider>
@@ -1249,7 +1285,6 @@
         <state relative-caret-position="735">
           <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="false" />
             <marker date="1491281369578" expanded="true" signature="515:563" ph="SELECT * FRO... INCIDENCIAS" />
             <marker date="1491281369578" expanded="true" signature="1196:1221" ph="SELECT * FRO... INCIDENCIAS" />
           </folding>
@@ -1261,7 +1296,6 @@
         <state relative-caret-position="735">
           <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="false" />
             <marker date="1491077716720" expanded="true" signature="574:596" ph="SELECT * FRO... PERIODOS" />
           </folding>
         </state>
@@ -1272,7 +1306,6 @@
         <state relative-caret-position="903">
           <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="false" />
             <marker date="1491281369625" expanded="true" signature="862:893" ph="SELECT * FRO... SUJETOS_OBLIGADOS" />
             <marker date="1491281369625" expanded="true" signature="1184:1243" ph="SELECT * FRO... SUJETOS_OBLIGADOS" />
           </folding>
@@ -1284,7 +1317,17 @@
         <state relative-caret-position="315">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#8910#10979#0#JSP" expanded="false" />
+            <element signature="e#2992#4793#0#HTML" expanded="false" />
+            <element signature="e#4870#4892#0#HTML" expanded="true" />
+            <element signature="e#4839#5232#0#HTML" expanded="false" />
+            <element signature="e#5300#5522#0#HTML" expanded="false" />
+            <element signature="e#5629#6931#0#HTML" expanded="false" />
+            <element signature="e#7068#7092#0#HTML" expanded="true" />
+            <element signature="e#7909#8160#0#HTML" expanded="false" />
+            <element signature="e#8186#13794#0#HTML" expanded="false" />
+            <element signature="e#8917#8939#0#HTML" expanded="true" />
+            <element signature="e#9892#10927#0#HTML" expanded="false" />
+            <element signature="e#10969#11110#0#JSP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1316,8 +1359,8 @@
         <state relative-caret-position="441">
           <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
           <folding>
-            <marker date="1491451084692" expanded="true" signature="433:687" ph="select 'Arti... Articulos" />
-            <marker date="1491451084692" expanded="true" signature="687:689" ph="select 'Arti... Articulos" />
+            <marker date="1491460529162" expanded="true" signature="495:776" ph="select 'Arti... Articulos" />
+            <marker date="1491460529162" expanded="true" signature="842:843" ph="select 'Arti... Articulos" />
           </folding>
         </state>
       </provider>
@@ -1351,7 +1394,17 @@
         <state relative-caret-position="580">
           <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
           <folding>
-            <element signature="e#8910#10979#0#JSP" expanded="false" />
+            <element signature="e#2992#4793#0#HTML" expanded="false" />
+            <element signature="e#4870#4892#0#HTML" expanded="true" />
+            <element signature="e#4839#5232#0#HTML" expanded="false" />
+            <element signature="e#5300#5522#0#HTML" expanded="false" />
+            <element signature="e#5629#6931#0#HTML" expanded="false" />
+            <element signature="e#7068#7092#0#HTML" expanded="true" />
+            <element signature="e#7909#8160#0#HTML" expanded="false" />
+            <element signature="e#8186#13794#0#HTML" expanded="false" />
+            <element signature="e#8917#8939#0#HTML" expanded="true" />
+            <element signature="e#9892#10927#0#HTML" expanded="false" />
+            <element signature="e#10969#11110#0#JSP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1362,10 +1415,7 @@
         <state relative-caret-position="220">
           <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#164#165#0" expanded="false" />
-            <element signature="e#199#200#0" expanded="false" />
-            <marker date="1491077454728" expanded="true" signature="298:387" ph="select * fro... ART_FRACC_RESPUESTAS" />
+            <marker date="1491456509611" expanded="true" signature="335:424" ph="select * fro... ART_FRACC_RESPUESTAS" />
           </folding>
         </state>
       </provider>
@@ -1387,30 +1437,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/SuccessController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="58" lean-forward="false" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1491079284055" expanded="true" signature="429:793" ph="select descr... EVALUACIONES_FRACCIONES" />
-            <marker date="1491079284055" expanded="true" signature="461:583" ph="Select Sum (... Det_Eval_Fracciones" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/viewEval.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6657">
           <caret line="317" column="7" lean-forward="false" selection-start-line="317" selection-start-column="7" selection-end-line="317" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/response.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4032">
-          <caret line="192" column="7" lean-forward="false" selection-start-line="192" selection-start-column="7" selection-end-line="192" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1438,105 +1468,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/alter.jsp" />
     <entry file="file://$PROJECT_DIR$/src/controllers/IndexInfo.java" />
-    <entry file="file://$PROJECT_DIR$/src/models/Evaluaciones.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="67" column="28" lean-forward="false" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1491281369531" expanded="true" signature="1133:1182" ph="SELECT * FRO... EVALUACIONES" />
-            <marker date="1491281369531" expanded="true" signature="2761:2787" ph="SELECT * FRO... EVALUACIONES" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/HelperFunctions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#209#210#0" expanded="false" />
-            <element signature="e#244#245#0" expanded="false" />
-            <marker date="1491077716627" expanded="true" signature="364:711" ph="select numer... EVALUACIONES_FRACCIONES" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Insidencias.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1491281369578" expanded="true" signature="515:563" ph="SELECT * FRO... INCIDENCIAS" />
-            <marker date="1491281369578" expanded="true" signature="1196:1221" ph="SELECT * FRO... INCIDENCIAS" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Periodos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1491077716720" expanded="true" signature="574:596" ph="SELECT * FRO... PERIODOS" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/SujetosObligados.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1491281369625" expanded="true" signature="862:893" ph="SELECT * FRO... SUJETOS_OBLIGADOS" />
-            <marker date="1491281369625" expanded="true" signature="1184:1243" ph="SELECT * FRO... SUJETOS_OBLIGADOS" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/GetRestrictForChoise.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1491281369453" expanded="true" signature="446:565" ph="SELECT * FRO... DET_EVAL_FRACCIONES" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/GetResp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#164#165#0" expanded="false" />
-            <element signature="e#199#200#0" expanded="false" />
-            <marker date="1491077454728" expanded="true" signature="298:387" ph="select * fro... ART_FRACC_RESPUESTAS" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/Conexion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
           <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="185" column="26" lean-forward="true" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
-          <folding>
-            <element signature="e#8910#10979#0#JSP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1548,14 +1484,163 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Insidencias.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+          <folding>
+            <marker date="1491281369578" expanded="true" signature="515:563" ph="SELECT * FRO... INCIDENCIAS" />
+            <marker date="1491281369578" expanded="true" signature="1196:1221" ph="SELECT * FRO... INCIDENCIAS" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Periodos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="654">
+          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <marker date="1491077716720" expanded="true" signature="574:596" ph="SELECT * FRO... PERIODOS" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/SujetosObligados.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding>
+            <marker date="1491281369625" expanded="true" signature="862:893" ph="SELECT * FRO... SUJETOS_OBLIGADOS" />
+            <marker date="1491281369625" expanded="true" signature="1184:1243" ph="SELECT * FRO... SUJETOS_OBLIGADOS" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/setPoints.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4166">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/setResponseEval.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1373">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/GetResp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <marker date="1491456509611" expanded="true" signature="335:424" ph="select * fro... ART_FRACC_RESPUESTAS" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/HelperFunctions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="16" column="59" lean-forward="false" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+          <folding>
+            <marker date="1491456715151" expanded="true" signature="396:743" ph="select numer... EVALUACIONES_FRACCIONES" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/GetRestrictForChoise.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="21" column="172" lean-forward="false" selection-start-line="21" selection-start-column="172" selection-end-line="21" selection-end-column="172" />
+          <folding>
+            <marker date="1491457045760" expanded="true" signature="440:559" ph="SELECT * FRO... DET_EVAL_FRACCIONES" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Answer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Evaluaciones.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="44" column="19" lean-forward="false" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1491281369531" expanded="true" signature="1133:1182" ph="SELECT * FRO... EVALUACIONES" />
+            <marker date="1491281369531" expanded="true" signature="2761:2787" ph="SELECT * FRO... EVALUACIONES" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/SuccessController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <marker date="1491460637908" expanded="true" signature="420:784" ph="select descr... EVALUACIONES_FRACCIONES" />
+            <marker date="1491460637908" expanded="true" signature="452:574" ph="Select Sum (... Det_Eval_Fracciones" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/Articulos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        <state relative-caret-position="210">
+          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="26" />
           <folding>
-            <marker date="1491451084692" expanded="true" signature="433:687" ph="select 'Arti... Articulos" />
-            <marker date="1491451084692" expanded="true" signature="687:689" ph="select 'Arti... Articulos" />
+            <marker date="1491460529162" expanded="true" signature="495:776" ph="select 'Arti... Articulos" />
+            <marker date="1491460529162" expanded="true" signature="842:843" ph="select 'Arti... Articulos" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="185" column="30" lean-forward="false" selection-start-line="185" selection-start-column="30" selection-end-line="185" selection-end-column="30" />
+          <folding>
+            <element signature="e#2992#4793#0#HTML" expanded="false" />
+            <element signature="e#4870#4892#0#HTML" expanded="true" />
+            <element signature="e#4839#5232#0#HTML" expanded="false" />
+            <element signature="e#5300#5522#0#HTML" expanded="false" />
+            <element signature="e#5629#6931#0#HTML" expanded="false" />
+            <element signature="e#7068#7092#0#HTML" expanded="true" />
+            <element signature="e#7909#8160#0#HTML" expanded="false" />
+            <element signature="e#8186#13794#0#HTML" expanded="false" />
+            <element signature="e#8917#8939#0#HTML" expanded="true" />
+            <element signature="e#9892#10927#0#HTML" expanded="false" />
+            <element signature="e#10969#11110#0#JSP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/response.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="166" column="60" lean-forward="false" selection-start-line="166" selection-start-column="60" selection-end-line="166" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -17,10 +17,9 @@ public class GetRestrictForChoise {
         }
     }
     
-    public boolean checkStat(String evaluacionFraccionId, String artFraccionRespuestaId){
+    public boolean checkStat(int evaluacionFraccionId, int artFraccionRespuestaId){
         try{
             String query = "SELECT * FROM DET_EVAL_FRACCIONES WHERE EVALUACION_FRACCION_ID = "+evaluacionFraccionId+" AND ART_FRACC_RESPUESTA_ID = "+artFraccionRespuestaId;
-            
             ResultSet res = this.conx.stm.executeQuery(query);
             
             if(res != null){

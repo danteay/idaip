@@ -6,15 +6,15 @@ import core.Conexion;
 
 public class SuccessController {
     
-    private String element;
+    private int element;
     private Conexion conx;
     
-    public SuccessController(Conexion conx, String element){
+    public SuccessController(Conexion conx, int element){
         this.element = element;
         this.conx = conx;
     }
     
-    public ResultSet getSuccess(String respTo){
+    public ResultSet getSuccess(int respTo){
         ResultSet res = null;
         
         try{

@@ -6,13 +6,14 @@
 <%@ page import="models.SujetosObligados"%>
 <%@ page import="core.NoConectionFunctions"%>
 <%@ page import="core.Conexion" %>
+<%@ page import="java.util.ArrayList" %>
 
 <%
-    String element = "0";
+    int eval = 0;
     
     try{
         if(request.getParameter("evl") != null){
-            element = request.getParameter("evl");
+            eval = Integer.parseInt(request.getParameter("evl"));
         }else{
             response.sendRedirect("error.html");
         } 
@@ -24,18 +25,18 @@
     Conexion conx = new Conexion();
     
     Evaluaciones objevl = new Evaluaciones(conx);
-    SuccessController obj = new SuccessController(conx, element);
+    SuccessController obj = new SuccessController(conx, eval);
     Articulos objart = new Articulos(conx);
     SujetosObligados objsub = new SujetosObligados(conx);
     
     NoConectionFunctions objncf = new NoConectionFunctions();
     
-    objevl.getItem(Integer.parseInt(element));
+    objevl.getItem(eval);
     objsub.getItem(objevl.sujeto_obligado_id);
     
-    String parcePercent = objncf.parsePercent(String.valueOf(objevl.resultado));    
-    
-    ResultSet arts = objart.getArticulosFromEvaluacion(element);
+    String parcePercent = objncf.parsePercent(String.valueOf(objevl.resultado));
+
+    ArrayList<Articulos> arts = objart.getArticulosFromEvaluacion(eval);
     ResultSet res = null;
 %>
 <!DOCTYPE html>
@@ -97,21 +98,21 @@
                         }else if(objevl.resultado < 100 && objevl.resultado >= 80){
                     %>
                         <div data-alert class="alert-box large-12 columns" id="alert2" style="background: #3BC829; border: none; font-size: 0.9125rem;">
-                            Su nivel de cumplimiento es aceptable, sin embargo puede  aumentar el nivel del mismo por lo que lo invitamos a seguir completando y actualizando la informaci�n en su portal de transparencia.
+                            Su nivel de cumplimiento es aceptable, sin embargo puede  aumentar el nivel del mismo por lo que lo invitamos a seguir completando y actualizando la información en su portal de transparencia.
                             <a onclick="$('#alert2').fadeOut();" class="close">&times;</a>
                         </div>
                     <%
                         }else if(objevl.resultado < 80 && objevl.resultado >= 60){
                     %>
                         <div data-alert class="alert-box large-12 columns" id="alert3" style="background: #F3BD24; border: none; font-size: 0.9125rem;">
-                            Lo invitamos a seguir completando y actualizando la informaci�n en su portal de transparencia, evitando as� futuras sanciones por incumplimiento en la publicaci�n de la informaci�n m�nima de oficio.
+                            Lo invitamos a seguir completando y actualizando la información en su portal de transparencia, evitando así futuras sanciones por incumplimiento en la publicación de la información mínima de oficio.
                             <a onclick="$('#alert3').fadeOut();" class="close">&times;</a>
                         </div>
                     <%
                         }else if(objevl.resultado < 60){
                     %>
                         <div data-alert class="alert-box large-12 columns" id="alert4" style="background: #E73F24; border: none; font-size: 0.9125rem;">
-                            Su nivel de cumplimiento es demasiado bajo, lo exhortamos para que complete y actualice la informaci�n m�nima de oficio en su portal de internet, evitando futuras sanciones.
+                            Su nivel de cumplimiento es demasiado bajo, lo exhortamos para que complete y actualice la información mínima de oficio en su portal de internet, evitando futuras sanciones.
                             <a onclick="$('#alert4').fadeOut();" class="close">&times;</a>
                         </div>
                     <%
@@ -126,7 +127,7 @@
                 
                 <div class="large-12 columns">
                     <section class="left">
-                        <h6>Resumen de verificaci�n</h6>
+                        <h6>Resumen de verificación</h6>
                     </section>
 
                     <section class="right">                                    
@@ -136,7 +137,7 @@
                             <span>Error al guardar <img style="width: 20px; height: auto;" src="img/check_error.svg" alt="Error"></span>                                    
                         <% } %>
                             
-                            <% if(objevl.cierre == 0){ %><a class="button tiny" href="index.jsp?evl=<% out.print(""+element); %>">Continuar Verificaci�n</a><% } %>                            
+                            <% if(objevl.cierre == 0){ %><a class="button tiny" href="index.jsp?evl=<% out.print(""+eval); %>">Continuar Verificaci�n</a><% } %>
                             
                     </section>
                     <hr>
@@ -145,27 +146,25 @@
                 <div class="large-12 columns">
                     
                     <%
-                    if(arts != null){
-                        while(arts.next()){
-                            
-                            res = obj.getSuccess(arts.getString(2));
-                            
-                            %>
-                            <div class="row">
-                                <div class="large-12 columns">
-                                    <h5><% out.print(""+arts.getString(1)); %></h5>
-                                    <hr>
-                                </div>
-                            </div>
-                            <%
-                            
-                            if(res != null){
-                                while(res.next()){
+                        for (Articulos articulo : arts) {
+                            res = obj.getSuccess(articulo.articuloId);
+                    %>
+
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <h5><% out.print(articulo.articulo); %></h5>
+                            <hr>
+                        </div>
+                    </div>
+
+                    <%
+                        if(res != null){
+                            while(res.next()){
                     %>
                     
                     <div class="row">
                         <div class="large-12 columns" style='color: #008CBA'>
-                            <b><% out.print(res.getString(1)+""); %></b>
+                            <b><% out.print(res.getString(1)); %></b>
                         </div>
                         <div class="large-12 columns">
                             <div class="row collapse">    
@@ -183,7 +182,6 @@
                                 }
                             }
                         }
-                    }
                     %>
                     
                 </div>

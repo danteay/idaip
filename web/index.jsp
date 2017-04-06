@@ -3,23 +3,18 @@
 <%@ page import="java.text.DateFormat"%>
 <%@ page import="java.util.Date"%>
 <%@ page import="java.sql.ResultSet"%>
-<%@ page import="models.GetResp"%>
-<%@ page import="models.SujetosObligados"%>
-<%@ page import="models.HelperFunctions"%>
-<%@ page import="models.Evaluaciones"%>
-<%@ page import="models.Articulos"%>
-<%@ page import="models.GetRestrictForChoise" %>
-<%@ page import="models.Insidencias"%>
 <%@ page import="core.NoConectionFunctions"%>
 <%@ page import="core.Conexion" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="models.*" %>
 
 
 <%
-    String eval = "0";
+    int eval = 0;
     Conexion conx = null;
     try{
         if(request.getParameter("evl") != null){
-            eval = request.getParameter("evl");
+            eval = Integer.parseInt(request.getParameter("evl"));
         }else{
             response.sendRedirect("error.html");
         }
@@ -39,10 +34,10 @@
     GetRestrictForChoise objgrc = new GetRestrictForChoise(conx);
     Insidencias objinc = new Insidencias(conx);
 
-    ResultSet arts = objart.getArticulosFromEvaluacion(eval);
+    ArrayList<Articulos> arts = objart.getArticulosFromEvaluacion(eval);
     ResultSet getInc = objinc.getAllItems();
 
-    objevl.getItem(Integer.parseInt(eval));
+    objevl.getItem(eval);
     objsub.getItem(objevl.sujeto_obligado_id);
 
     int trespuestas = 0;
@@ -70,8 +65,6 @@
     if(objevl.tipo_evaluacion == 1){
         setMode = true;
     }
-
-    String option = "";
     
 %>
 
@@ -98,7 +91,6 @@
                     <li class="name hide-for-small"> 
                         <h1><a href="#">IDAIP</a></h1> 
                     </li>
-                    
                 </ul>
                 
                 <section class="top-bar-section">                    
@@ -131,15 +123,14 @@
                 </section>
             </nav> 
             
-                        <div class="alert-box warning" style="display: none;" id="alertbox">
-                            Si alguno de los reactivos quedara sin una o varias respuestas seleccionadas, asegurese de generar un comentario.<br>
-                            Porfavor rectifique los reactivos e intente guardar nuevamente.
-                            <a onclick="$('#alertbox').css('display','none')" class="close">&times;</a>
-                        </div>
+            <div class="alert-box warning" style="display: none;" id="alertbox">
+                Si alguno de los reactivos quedara sin una o varias respuestas seleccionadas, asegurese de generar un comentario.<br>
+                Porfavor rectifique los reactivos e intente guardar nuevamente.
+                <a onclick="$('#alertbox').css('display','none')" class="close">&times;</a>
+            </div>
         </div>
                         
         <main>
-            
             <div class="row">
                 <div class="large-12 columns text-center">
                     <img src="img/logoIDAIP.jpg" style="height:150px; width:auto;">                    
@@ -179,109 +170,13 @@
                     </div>                    
                 </div>
             </div>
-                        
+
             <div class="row">
                 <div class="large-12 columns">
                     <div class="panel" style="overflow: hidden">
-                        <%
-                            if(arts != null){
-                                while(arts.next()){
-                        %>
-                        
-                        <div class="row">
-                            <div class="large-12 columns">
-                                <h5><% out.print(arts.getString(1)); %></h5>
-                                <hr>
-                            </div>
-                        </div>                        
-                        
-                        <div class='row'>
-                            <div class='large-12 columns'>
-                                <%                                              
-                                ResultSet quest = objhelp.getQuestiosForEvaluation(eval, arts.getString(2));
-                                while(quest.next()){
-                                    int estatQuest = quest.getString(6) != null ? Integer.parseInt(quest.getString(6)) : 0;
 
-                                    if(estatQuest == 1){
-                                        String comentario = quest.getString(5) != null ? quest.getString(5):"";
-                                        float points = quest.getString(4) != null ? Float.parseFloat(quest.getString(4)): 0;
-                                %>
-
-                                <div class='row'>
-                                    <div class='large-12 columns'>
-                                        <%
-                                            out.println("<b style='color: #008CBA'>" + quest.getString(1) + "</b> <br>");
-
-                                            ResultSet resp = objrep.getRespForQuestion(Integer.parseInt(quest.getString(2)));
-                                            
-                                            if(resp != null){
-                                                while(resp.next()){
-                                                    
-                                                    int estatusAux = resp.getString(6) != null ? Integer.parseInt(resp.getString(6)) : 0;
-                                                    
-                                                    if(estatusAux == 1){
-                                                        option = "";
-
-                                                        if(objgrc.checkStat(quest.getString(3), resp.getString(1))){                                                        
-                                                            option = "checked";
-                                                        }
-
-                                                        if(resp.getString(3) != null){
-                                                            out.println("<label for='" + trespuestas + "'><input "+option+" data-dbid-evl='"+ quest.getString(3) +"' data-dbid-art='"+resp.getString(1)+"' onclick='setPoints($(this).attr(\"data-question\"),$(this).attr(\"id\"))' data-question='" + tpreguntas + "' type='checkbox' value='" + resp.getString(4) + "' id='"+ trespuestas +"' "+stat+"> " + resp.getString(3) + "</label>");
-
-                                                            trespuestas++;
-                                                        }
-                                                    
-                                                    }
-                                                }
-                                            }
-                                            
-                                        %>
-                                    </div>
-                                </div>
-                                            
-                                <div class='row'>
-                                    <div class='large-6 columns'>
-                                        <label for="coment-p-<%out.print(tpreguntas);%>"></label>
-                                        <% out.println("<textarea "+stat+" id='coment-p-"+tpreguntas+"' data-dbid-evl='"+ quest.getString(3) +"'>"+comentario+"</textarea>"); %>
-                                    </div>
-
-                                    <div class='large-6 columns'>
-                                        <label>Comentarios Incidentes</label>
-                                        <%
-                                            String aux = comentSelect.replace("{{question}}",""+tpreguntas);
-                                            out.print(aux);
-                                        %>
-                                    </div>
-
-                                    <div class="large-12 columns"><br>
-                                        <div class="row">
-                                            <div class="large-1 columns">
-                                                <% out.println("<label for='points-p-"+tpreguntas+"' class='right inline'>Puntaje</label>"); %>
-                                            </div>
-
-                                            <div class="large-1 columns">
-                                                <%  out.println("<input "+stat+" data-dbid-evl='"+ quest.getString(3) +"' onchange='parseAction($(this).attr(\"id\"))' type='text' id='points-p-"+tpreguntas+"' value='"+points+"'>"); %>
-                                            </div>
-
-                                            <div class="large-10 columns"></div>
-                                        </div>
-                                        <br>
-                                    </div>
-                                </div>
-                                            
-                                <%
-                                                    tpreguntas++;
-                                                }
-                                            }
-                                        }
-                                    }
-                                %>    
-                            </div>
-                        </div>
-                        
-                        <input type="hidden" id="trespuestas" value="<% out.print(trespuestas+""); %>">
-                        <input type="hidden" id="tpreguntas" value="<% out.print(tpreguntas+""); %>">
+                        <input type="hidden" id="trespuestas" value="<% out.print(trespuestas); %>">
+                        <input type="hidden" id="tpreguntas" value="<% out.print(tpreguntas); %>">
 
                         <div class="row <% if(objevl.cierre == 1){ out.print("hide"); } %>">
                             <div class="large-12 columns text-center"><br>
@@ -289,6 +184,111 @@
                                 <input class="button tiny pull-right" type="button" id="sendEval" value="Guardar y Finalizar">
                             </div>
                         </div>
+
+                        <% for (Articulos art : arts) { %>
+
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <h5><% out.print(art.articulo); %></h5>
+                                <hr>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="large-12 column">
+                                <%
+                                    ArrayList<Question> questions = objhelp.getQuestiosForEvaluation(eval, art.articuloId);
+                                    tpreguntas = questions.size();
+
+                                    for (int i1 = 0; i1 < questions.size(); i1++) {
+                                        Question question = questions.get(i1);
+                                        if (question.estatus == 1) {
+                                %>
+
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <b style="color: #008CBA"><% out.print(question.descripcion); %></b>
+                                        <%
+                                            ArrayList<Answer> answers = objrep.getRespForQuestion(question.articuloFraccionId);
+                                            trespuestas = answers.size();
+
+                                            for (int i = 0; i < answers.size(); i++) {
+                                                Answer answer = answers.get(i);
+                                                if (answer.status == 1) {
+                                                    String option = "";
+
+                                                    if (objgrc.checkStat(question.evaluacionFraccionId, answer.artFraccRespuestaId)) {
+                                                        option = "checked";
+                                                    }
+                                        %>
+
+                                        <label for="<% out.print(i); %>">
+                                            <input
+                                                <% out.print(option); %>
+                                                <% out.print(stat); %>
+                                                    data-dbid-evl="<% out.print(question.evaluacionFraccionId); %>"
+                                                    data-dbid-art="<% out.print(answer.artFraccRespuestaId); %>"
+                                                    onclick="setPoints($(this).attr('data-question'), $(this).attr('id'))"
+                                                    data-question="<% out.print(i1); %>"
+                                                    type="checkbox"
+                                                    value="<% out.print(answer.valor); %>"
+                                                    id="<% out.print(i); %>">
+
+                                            <% out.print(answer.respuesta); %>
+                                        </label>
+
+                                        <%
+                                                }
+                                            }
+                                        %>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="large-6 columns">
+                                        <label for="coment-p-<%out.print(i1);%>"></label>
+                                        <textarea <% out.print(stat); %>
+                                            id="coment-p-<%out.print(i1);%>"
+                                            data-dbid-evl="<%out.print(question.evaluacionFraccionId);%>"
+                                        ><% out.print(question.comentario); %></textarea>
+                                    </div>
+
+                                    <div class="large-6 columns">
+                                        <label>Comentarios Incidentes</label>
+                                        <%
+                                            String aux = comentSelect.replace("{{question}}",""+i1);
+                                            out.print(aux);
+                                        %>
+                                    </div>
+
+                                    <div class="large-12 columns">
+                                        <div class="row">
+                                            <div class="large-1 columns">
+                                                <label for='points-p-<% out.print(i1); %>' class='right inline'>
+                                                    Puntaje
+                                                </label>
+                                            </div>
+                                            <div class="large-1 columns">
+                                                <input <% out.print(stat); %>
+                                                    data-dbid-evl="<% out.print(question.evaluacionFraccionId); %>"
+                                                    onchange="parseAction($(this).attr('id'))"
+                                                    type="text"
+                                                    id="points-p-<% out.print(i1); %>"
+                                                    value="<% out.print(question.respuesta); %>">
+                                            </div>
+                                            <div class="large-10 columns"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <%
+                                        }
+                                    }
+                                %>
+                            </div>
+                        </div>
+
+                        <% } %>
                     </div>
                 </div>
             </div>

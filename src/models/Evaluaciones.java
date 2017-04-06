@@ -61,9 +61,11 @@ public class Evaluaciones {
                 this.tipo_evaluacion = res.getString(9) != null ? Integer.parseInt(res.getString(9)):0;
                 this.cierre = res.getString(10) != null ? Integer.parseInt(res.getString(10)):0;
                 this.resultado = res.getString(11) != null ? Float.parseFloat(res.getString(11)):0;
-                
+
+                res.close();
                 return true;                
             }else{
+                res.close();
                 return false;
             }         
         }catch(Exception e){

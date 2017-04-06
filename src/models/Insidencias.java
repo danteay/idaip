@@ -30,9 +30,11 @@ public class Insidencias {
             if(res != null){
                 this.incidencia_id = res.getString(1) != null ? Integer.parseInt(res.getString(1)):0;
                 this.descripcion = res.getString(2) != null ? res.getString(2):"";
-                
+
+                res.close();
                 return true;
             }else{
+                res.close();
                 return false;
             }
         }catch(Exception e){

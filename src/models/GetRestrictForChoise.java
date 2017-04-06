@@ -27,9 +27,10 @@ public class GetRestrictForChoise {
                 res.next();
                 
                 float value = Float.parseFloat(res.getString(4));
-                
+                res.close();
                 return value > 0;
             }else{
+                res.close();
                 return false;
             }
         }catch(Exception e){

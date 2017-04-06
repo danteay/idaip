@@ -61,9 +61,11 @@ public class SujetosObligados {
                 this.correWeb = res.getString(7);
                 this.tipoSujetoIdObligado = Integer.parseInt(res.getString(8));
                 this.sujeto = res.getString(9);
-                
+
+                res.close();
                 return true;
             }else{
+                res.close();
                 return false;
             }
         }catch(Exception e){

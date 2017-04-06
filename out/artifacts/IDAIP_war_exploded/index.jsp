@@ -157,63 +157,59 @@
                         
                         <p><b>Sujeto obligado:</b> <% out.print(objsub.sujeto); %></p>
                         <p><b>Portal de internet:</b> <% out.println(objsub.portalInternet); %></p>
-                        <p><b>Fecha:</b> <%
-                            if(objevl.fecha_evaluacion != null){
-                                out.print(objevl.fecha_evaluacion);                            
-                            }else{
-                                Date now = new Date();
-                                Calendar cal = Calendar.getInstance();
-                                DateFormat df = DateFormat.getDateInstance();
-                                
-                                cal.setTime(now);
-                                cal.add(Calendar.DAY_OF_YEAR, -1);
-                                
-                                String date = df.format(cal.getTime());
+                        <p>
+                            <b>Fecha:</b>
+                            <%
+                                if(objevl.fecha_evaluacion != null){
+                                    out.print(objevl.fecha_evaluacion);
+                                }else{
+                                    Date now = new Date();
+                                    Calendar cal = Calendar.getInstance();
+                                    DateFormat df = DateFormat.getDateInstance();
 
-                                out.print(date);
-                            }
-                        %></p>
+                                    cal.setTime(now);
+                                    cal.add(Calendar.DAY_OF_YEAR, -1);
+
+                                    String date = df.format(cal.getTime());
+
+                                    out.print(date);
+                                }
+                            %>
+                        </p>
                     </div>                    
                 </div>
             </div>
                         
             <div class="row">
                 <div class="large-12 columns">
-                    <div class="panel" style="overflow: hidden">                         
-                        
+                    <div class="panel" style="overflow: hidden">
                         <%
                             if(arts != null){
                                 while(arts.next()){
-                                    
                         %>
                         
                         <div class="row">
                             <div class="large-12 columns">
-                                <%
-                                    out.print("<h5>"+ arts.getString(1) +"</h5>");
-                                    out.print("<hr>");
-                                %>
+                                <h5><% out.print(arts.getString(1)); %></h5>
+                                <hr>
                             </div>
                         </div>                        
                         
                         <div class='row'>
                             <div class='large-12 columns'>
                                 <%                                              
-                                    ResultSet quest = objhelp.getQuestiosForEvaluation(eval, arts.getString(2));
-                                            
-                                    while(quest.next()){ 
-                                        
-                                        int estatQuest = quest.getString(6) != null ? Integer.parseInt(quest.getString(6)) : 0;
-                                        
-                                        if(estatQuest == 1){
-                                        
-                                            String comentario = quest.getString(5) != null ? quest.getString(5):"";
-                                            float points = quest.getString(4) != null ? Float.parseFloat(quest.getString(4)): 0;
-                                        
+                                ResultSet quest = objhelp.getQuestiosForEvaluation(eval, arts.getString(2));
+                                while(quest.next()){
+                                    int estatQuest = quest.getString(6) != null ? Integer.parseInt(quest.getString(6)) : 0;
+
+                                    if(estatQuest == 1){
+                                        String comentario = quest.getString(5) != null ? quest.getString(5):"";
+                                        float points = quest.getString(4) != null ? Float.parseFloat(quest.getString(4)): 0;
                                 %>
-                                    <div class='row'>
-                                        <div class='large-12 columns'>
-                                <%            
+
+                                <div class='row'>
+                                    <div class='large-12 columns'>
+                                        <%
                                             out.println("<b style='color: #008CBA'>" + quest.getString(1) + "</b> <br>");
 
                                             ResultSet resp = objrep.getRespForQuestion(Integer.parseInt(quest.getString(2)));
@@ -240,48 +236,39 @@
                                                 }
                                             }
                                             
-                                %>
-                                            
-                                        </div>
+                                        %>
                                     </div>
+                                </div>
                                             
-                                    <div class='row'>
-                                        <div class='large-6 columns'>
-                                                
-                                <%
-                                                
-                                            out.println("<label for='coment-p-"+tpreguntas+"'>Comentario</label>");
-                                            out.println("<textarea "+stat+" id='coment-p-"+tpreguntas+"' data-dbid-evl='"+ quest.getString(3) +"'>"+comentario+"</textarea>");
-                                
-                                %>
-                                            
-                                        </div>                                          
-                                        <div class='large-6 columns'>
-                                                
-                                <%
+                                <div class='row'>
+                                    <div class='large-6 columns'>
+                                        <label for="coment-p-<%out.print(tpreguntas);%>"></label>
+                                        <% out.println("<textarea "+stat+" id='coment-p-"+tpreguntas+"' data-dbid-evl='"+ quest.getString(3) +"'>"+comentario+"</textarea>"); %>
+                                    </div>
+
+                                    <div class='large-6 columns'>
+                                        <label>Comentarios Incidentes</label>
+                                        <%
                                             String aux = comentSelect.replace("{{question}}",""+tpreguntas);
-                                            
-                                            out.println("<label>Comentarios Incidentes</label>");
-                                            out.print(aux); 
-                                
-                                %>
-                                
-                                           
-                                        </div>
-                                        <div class="large-12 columns">
-                                            <br>
-                                            <div class="row">
-                                                <div class="large-1 columns">
-                                                    <% out.println("<label for='points-p-"+tpreguntas+"' class='right inline'>Puntaje</label>"); %>
-                                                </div>
-                                                <div class="large-1 columns">
-                                                    <%  out.println("<input "+stat+" data-dbid-evl='"+ quest.getString(3) +"' onchange='parseAction($(this).attr(\"id\"))' type='text' id='points-p-"+tpreguntas+"' value='"+points+"'>"); %>
-                                                </div>
-                                                <div class="large-10 columns"></div>
-                                            </div>
-                                            <br>
-                                        </div>
+                                            out.print(aux);
+                                        %>
                                     </div>
+
+                                    <div class="large-12 columns"><br>
+                                        <div class="row">
+                                            <div class="large-1 columns">
+                                                <% out.println("<label for='points-p-"+tpreguntas+"' class='right inline'>Puntaje</label>"); %>
+                                            </div>
+
+                                            <div class="large-1 columns">
+                                                <%  out.println("<input "+stat+" data-dbid-evl='"+ quest.getString(3) +"' onchange='parseAction($(this).attr(\"id\"))' type='text' id='points-p-"+tpreguntas+"' value='"+points+"'>"); %>
+                                            </div>
+
+                                            <div class="large-10 columns"></div>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
                                             
                                 <%
                                                     tpreguntas++;
@@ -293,30 +280,27 @@
                             </div>
                         </div>
                         
-                            <input type="hidden" id="trespuestas" value="<% out.print(trespuestas+""); %>">    
-                            <input type="hidden" id="tpreguntas" value="<% out.print(tpreguntas+""); %>">
-                            
-                            <div class="row <% if(objevl.cierre == 1){ out.print("hide"); } %>">
-                                <div class="large-12 columns text-center">
-                                    <br>
-                                    
-                                    <input class="button tiny pull-right <% if(!setMode){ out.print("hide"); } %>" type="button" id="saveAdvance" value="Guardar Cambios">
-                                    <input class="button tiny pull-right" type="button" id="sendEval" value="Guardar y Finalizar">
-                                </div>
+                        <input type="hidden" id="trespuestas" value="<% out.print(trespuestas+""); %>">
+                        <input type="hidden" id="tpreguntas" value="<% out.print(tpreguntas+""); %>">
+
+                        <div class="row <% if(objevl.cierre == 1){ out.print("hide"); } %>">
+                            <div class="large-12 columns text-center"><br>
+                                <input class="button tiny pull-right <% if(!setMode){ out.print("hide"); } %>" type="button" id="saveAdvance" value="Guardar Cambios">
+                                <input class="button tiny pull-right" type="button" id="sendEval" value="Guardar y Finalizar">
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
                     
-                    <form action="SetResponseEval" method="post" id="form" name="form" >
-                        <input type="hidden" name="query" id="fquery" value="">
-                        <input type="hidden" name="queryComent" id="queryComent" value="">
-                        <input type="hidden" name="queryPoints" id="queryPoints" value="">
-                        <input type="hidden" name="pageSend" id="fpage" value="<% out.println(eval); %>">
-                        <input type="hidden" name="mode" id="mode" value="">
-                        <input type="hidden" name="percent" id="percentComplete" value="<% out.print(""+objevl.resultado); %>">
-                        
-                    </form>
+            <form action="SetResponseEval" method="post" id="form" name="form" >
+                <input type="hidden" name="query" id="fquery" value="">
+                <input type="hidden" name="queryComent" id="queryComent" value="">
+                <input type="hidden" name="queryPoints" id="queryPoints" value="">
+                <input type="hidden" name="pageSend" id="fpage" value="<% out.println(eval); %>">
+                <input type="hidden" name="mode" id="mode" value="">
+                <input type="hidden" name="percent" id="percentComplete" value="<% out.print(""+objevl.resultado); %>">
+            </form>
                                 
         </main>
         
@@ -330,7 +314,7 @@
         <script>
             $(document).foundation();
         </script>
-        
-        
     </body>
 </html>
+
+<% conx.close(); %>
